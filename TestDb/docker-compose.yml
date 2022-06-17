@@ -1,0 +1,34 @@
+version: '3.1'
+
+services:
+    patientdb-test:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 'password'
+            MYSQL_DATABASE: 'mediscreen-test'
+        ports:
+            - "3315:3306"
+        expose:
+            - "3315"
+        volumes:
+            - mediscreen-db:/var/lib/mediscreen-test
+        container_name: patientdb-test
+    historydb-test:
+        image: mongo
+        restart: always
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: password
+            MONGO_INITDB_DATABASE: mediscreen-history
+        ports:
+            - "27018:27017"
+        expose:
+            - "27018"
+        volumes:
+            - mediscreen-db:/var/lib/mediscreen-history
+        container_name: historydb-test
+volumes:
+    mediscreen-db:
+
