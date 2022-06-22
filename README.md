@@ -54,10 +54,10 @@ This repository contains all of the completed applications, along with their Doc
 <br><br>
 For additional details on the development process for each microservice, please refer to their individual repositories which contain a full commit and pull request history.
 <br>
-[Patient Demographics Microservice](https://github.com/Suracki/Mediscreen)
-[Patient History Microservice](https://github.com/Suracki/MediscreenPatientHistory)
-[Patient Assessment Microservice](https://github.com/Suracki/MediscreenPatientAssessment)
-<br><br>
+[Patient Demographics Microservice](https://github.com/Suracki/Mediscreen)<br>
+[Patient History Microservice](https://github.com/Suracki/MediscreenPatientHistory)<br>
+[Patient Assessment Microservice](https://github.com/Suracki/MediscreenPatientAssessment)<br>
+<br>
 
 In addition to the font end pages, the application also provides REST API endpoints.
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -68,6 +68,8 @@ In addition to the font end pages, the application also provides REST API endpoi
 
 * [Java 11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 * [Spring Boot](https://spring.io/projects/spring-boot)
+* [MySQL](https://www.mysql.com/)
+* [MongoDB](https://www.mongodb.com/)
 * [Maven](https://maven.apache.org/)
 * [Gson](https://github.com/google/gson)
 * [RetroFit](https://square.github.io/retrofit/)
